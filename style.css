@@ -65,13 +65,29 @@
     position:absolute; 
     left:30px; 
     top:280px;
-    background-color: #39395F;
-    color: blanchedalmond;
+    background: linear-gradient(-45deg, #ee7752, #3ce7e7, #1bbb6b, #2370d5);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;    
+    color: rgb(255, 255, 255);
     border-radius: 30px;
     padding: 10px;
     opacity: 0.8;
     padding: 5px 45px;
 }
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
 .org{
     font-family: 'Baloo 2', cursive;
     font-size: 80px;
@@ -109,9 +125,17 @@
     border-radius: 10px;
     background: #a9c25d;
 }
+.btn1:hover{
+    background-color: #416a59;
+    border: 4px solid #a9c25d;
+}
 a{
     text-decoration: none;
     color: #416a59;
+}
+a:hover{
+    text-decoration: none;
+    color: #fff;
 }
 .desc{
     font-family: 'Permanent Marker', cursive;
